@@ -21,7 +21,8 @@ namespace EmployeeDailyWage
                 empHrs=0;
             }   
              empWage= empHrs * EMP_RATE_PER_HR;
-            Console.WriteLine("Employee Wage : " + empWage )
+            Console.WriteLine("Employee Wage : " + empWage );
+            Console.ReadKey();
         }
     }
 }
