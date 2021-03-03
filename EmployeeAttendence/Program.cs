@@ -1,7 +1,7 @@
-﻿
+
 using System;
 
-namespace EmployeeAttendence
+namespace EmployeeDailyWage
 {
     class Program
     {
