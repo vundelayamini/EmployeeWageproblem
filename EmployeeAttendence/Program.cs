@@ -7,8 +7,9 @@ namespace Employee_Details
     {
          public const int IS_FULL_TIME = 1;
         public const int IS_PART_TIME = 2;
-        public const int EMP_RATE_PER_HOUR = 50;
-        public const int NUM_OF_WORKING_DAYS = 20;
+        public const int EMP_RATE_PER_HOUR = 20;
+        public const int NUM_OF_WORKING_DAYS = 2;
+        public const int MAX_HRS_IN_MONTH = 10;
         static void Main(string[] args)
         {
           //variables
@@ -16,8 +17,9 @@ namespace Employee_Details
             int empWage = 0;
             int totalEmpWage = 0;
             //computation
-            for (int temp = 0; temp < NUM_OF_WORKING_DAYS; temp++)
+            while(totalEmpHrs <= MAX_HRS_IN_MONTH && totalWorkinDays < NUM_OF_WORKING_DAYS)
             {
+                totalWorkingDays++;
                 Random random = new Random();
                 int empCheck = random.Next(0, 3);
                 switch (empCheck)
@@ -32,11 +34,11 @@ namespace Employee_Details
                         empHrs = 0;
                         break;
                 }
-                empWage = empHrs * EMP_RATE_PER_HOUR;
-                totalEmpWage += empWage;
-            }
-            Console.WriteLine("Total Monthly Emp Wage : " + totalEmpWage);
 
-        }
+                totalEmphrs += empHrs;
+                Console.WriteLine("Day#:" + totalWorkingDays + "Emp Hrs :" + empHrs);
+            }
+              int totalEmpWage = totalEmpHrs * EMP_RATE_PER_HOUR;
+              Console.WriteLine("total Emp Wage :" + totalEmpWage)
     }
 }
