@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.31025.194
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EmployeeWageproblem", "EmployeeWageProblem\EmployeeWageproblem.csproj", "{073E1BE9-2A29-4467-98B4-AD6B2FB90C52}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UC10-ManageEmpwageMultipleCom", "UC10-ManageEmpwageMultipleCom\UC10-ManageEmpwageMultipleCom.csproj", "{03849E6B-00CB-443C-BCC5-FCEBDFE2B024}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -11,15 +11,15 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{073E1BE9-2A29-4467-98B4-AD6B2FB90C52}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{073E1BE9-2A29-4467-98B4-AD6B2FB90C52}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{073E1BE9-2A29-4467-98B4-AD6B2FB90C52}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{073E1BE9-2A29-4467-98B4-AD6B2FB90C52}.Release|Any CPU.Build.0 = Release|Any CPU
+		{03849E6B-00CB-443C-BCC5-FCEBDFE2B024}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{03849E6B-00CB-443C-BCC5-FCEBDFE2B024}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{03849E6B-00CB-443C-BCC5-FCEBDFE2B024}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{03849E6B-00CB-443C-BCC5-FCEBDFE2B024}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
-		SolutionGuid = {F67504CF-61B1-4D0F-9BE8-8B7274AE2ABE}
+		SolutionGuid = {1406E59C-6FC3-4F84-B4A5-461F09545CDB}
 	EndGlobalSection
 EndGlobal
