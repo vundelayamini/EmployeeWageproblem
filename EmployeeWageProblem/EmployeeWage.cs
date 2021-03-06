@@ -2,20 +2,30 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace EmployeeWageproblem
+namespace EmployeeWage
 {
-    class UC7_ComputeEmployeeWage
+    class EmpWage
     {
-        public const int IS_FULL_TIME = 1;
-        public const int IS_PART_TIME = 2;
-        public const int EMP_RATE_PER_HOUR = 20;
-        public const int NUMBER_OF_WORKING_DAYS = 20;
-        public const int MAX_HRS_IN_MONTH = 100;
+        public const int IS_FULL_TIME = 2;
+        public const int IS_PART_TIME = 1;
 
-        public static int calculateEmployee()
+        private string company;
+        private int empRatePerHour;
+        private int numOfWorkingDays;
+        private int maxHoursPerMonth;
+        private int totalEmpWage;
+
+        public EmpWage(string company, int empRatePerHour, int numOfWorkingDays, int maxHoursPerMonth)
+        {
+            this.company = company;
+            this.empRatePerHour = empRatePerHour;
+            this.numOfWorkingDays = numOfWorkingDays;
+            this.maxHoursPerMonth = maxHoursPerMonth;
+        }
+        public int computeEmpWage()
         {
             int empHrs = 0, totalEmpHrs = 0, totalWorkingDays = 0;
-            while (totalEmpHrs <= MAX_HRS_IN_MONTH && totalWorkingDays <= NUMBER_OF_WORKING_DAYS)
+            while (totalEmpHrs <= this.maxHoursPerMonth && totalWorkingDays <= this.numOfWorkingDays)
             {
                 totalWorkingDays++;
                 Random random = new Random();
@@ -34,12 +44,12 @@ namespace EmployeeWageproblem
                 }
                 totalEmpHrs += empHrs;
             }
-            int totalEmpWage = totalEmpHrs * EMP_RATE_PER_HOUR;
+            totalEmpWage = totalEmpHrs * empRatePerHour;
             return totalEmpWage;
         }
-        static void Main(String[] args)
+        public string toString()
         {
-
-            Console.WriteLine($"Total Employee Wage is : {calculateEmployee()}");
+            return $"Total Employee Wage for Company : {this.company} is {this.totalEmpWage}";
         }
+    }
 }
