@@ -13,17 +13,16 @@ namespace EmployeeWageproblem
         private int empRatePerHour;
         private int numOfWorkingDays;
         private int maxHoursPerMonth;
-        private int totalEmpWage;
-        
-        public const int IS_PART_TIME = 1;
-
-        
-        
-                private int totalEmpWage;
-
-
-        public static int calculateEmployee()
+        private int totalEmpWage; public Empwage(string company, int empRatePerHour, int numOfWorkingDays, int maxHoursPerMonth)
         {
+            this.company = company;
+            this.empRatePerHour = empRatePerHour;
+            this.numOfWorkingDays = numOfWorkingDays;
+            this.maxHoursPerMonth = maxHoursPerMonth;
+        }
+        
+          public static int calculateEmployee()
+           {
             int empHrs = 0, totalEmpHrs = 0, totalWorkingDays = 0;
             while (totalEmpHrs <= MAX_HRS_IN_MONTH && totalWorkingDays <= NUMBER_OF_WORKING_DAYS)
             {
