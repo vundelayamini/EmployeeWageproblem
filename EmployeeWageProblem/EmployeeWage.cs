@@ -4,13 +4,23 @@ using System.Text;
 
 namespace EmployeeWageproblem
 {
-    class UC7_ComputeEmployeeWage
-    {
-        public const int IS_FULL_TIME = 1;
-        public const int IS_PART_TIME = 2;
-        public const int EMP_RATE_PER_HOUR = 20;
-        public const int NUMBER_OF_WORKING_DAYS = 20;
-        public const int MAX_HRS_IN_MONTH = 100;
+    class EmpWage
+    { 
+        public const int IS_FULL_TIME = 2;
+        public const int IS_PART_TIME = 1;
+
+        private string company;
+        private int empRatePerHour;
+        private int numOfWorkingDays;
+        private int maxHoursPerMonth;
+        private int totalEmpWage;
+        
+        public const int IS_PART_TIME = 1;
+
+        
+        
+                private int totalEmpWage;
+
 
         public static int calculateEmployee()
         {
@@ -22,8 +32,7 @@ namespace EmployeeWageproblem
                 int empCheck = random.Next(0, 3);
                 switch (empCheck)
                 {
-                    case IS_PART_TIME:
-                        empHrs = 4;
+                     empHrs = 4;
                         break;
                     case IS_FULL_TIME:
                         empHrs = 8;
